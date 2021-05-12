@@ -1,5 +1,4 @@
 import time
-import Main
 
 def insertion(array):
     start_time = time.time()
