@@ -28,7 +28,6 @@ def merge(arr, left, right):
 
 
 def merge_sort(arr):
-    first_time = time.time()
     if len(arr) > 1:
         middle = len(arr)//2
         left = arr[:middle]
@@ -36,9 +35,4 @@ def merge_sort(arr):
         merge_sort(left)
         merge_sort(right)
         arr = merge(arr, left, right)
-    second_time = time.time()
-    if len(arr) == 10 or len(arr) == 100 or len(arr) == 1000 or len(arr) == 10000 or len(arr) == 100000:
-        print("The merge sorted array with size ", len(arr), "is ")
-        for i in range(0, len(arr)):
-            print("array[", i, "] = ", arr[i])
-    return second_time - first_time
+    return arr
