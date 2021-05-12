@@ -1,4 +1,3 @@
-import sys
 import time
 import Main
 
@@ -12,7 +11,7 @@ def selection_sort(arr, n):
                 min_element = j
         arr[i], arr[min_element] = arr[min_element], arr[i]
     second_time = time.time()
-    print("The sorted array with size ", n, "is ")
+    print("The selection sorted array with size ", n, "is ")
     for i in range(0, n):
         print("array[", i, "] = ", arr[i])
-    return first_time-second_time
+    return second_time-first_time
