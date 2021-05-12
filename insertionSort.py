@@ -1,6 +1,7 @@
 import time
 import Main
 
+
 def insertion(array):
     start_time = time.time()
     for i in range(1, len(array)):
