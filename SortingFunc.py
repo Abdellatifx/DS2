@@ -2,7 +2,6 @@ import random
 import time
 
 
-
 def arraygeneration(size):
     arr = []
     for j in range(0, size):

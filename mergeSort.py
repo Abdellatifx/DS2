@@ -1,12 +1,11 @@
-import math
-
-
-import time
 import sys
-sys.setrecursionlimit(10**7)
+
+import ParentClass
+
+sys.setrecursionlimit(10 ** 7)
 
 
-def merge(arr, left, right):
+def mergefunc(arr, left, right):
     i = j = k = 0
     while i < len(left) and j < len(right):
         if left[i] < right[j]:
@@ -27,12 +26,16 @@ def merge(arr, left, right):
     return arr
 
 
-def merge_sort(arr):
+def sort(arr):
     if len(arr) > 1:
-        middle = len(arr)//2
+        middle = len(arr) // 2
         left = arr[:middle]
         right = arr[middle:]
-        merge_sort(left)
-        merge_sort(right)
-        arr = merge(arr, left, right)
+        sort(left)
+        sort(right)
+        arr = mergefunc(arr, left, right)
     return arr
+
+
+class merge(ParentClass.SortMethods):
+    pass

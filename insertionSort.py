@@ -14,5 +14,3 @@ def sort(array):
 
 class insert(ParentClass.SortMethods):
     pass
-
-

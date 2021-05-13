@@ -1,3 +1,6 @@
+import ParentClass
+
+
 def heapify(arr, num, i):
     largest = i
     right = 2 * i + 1
@@ -15,7 +18,7 @@ def heapify(arr, num, i):
         heapify(arr, num, largest)
 
 
-def heapsort(arr):
+def sort(arr):
     n = len(arr)
 
     for i in range(n // 2 - 1, -1, -1):
@@ -25,3 +28,7 @@ def heapsort(arr):
         arr[i], arr[0] = arr[0], arr[i]
         heapify(arr, i, 0)
     return arr
+
+
+class insert(ParentClass.SortMethods):
+    pass
