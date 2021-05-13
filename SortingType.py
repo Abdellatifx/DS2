@@ -28,6 +28,6 @@ def Type():
     method = heapSort
     arr[4] = sorter(method, 'Heap')
 
- #   method = quickSort
-#    arr[5] = sorter(method, "Quick")
+    method = quickSort
+    arr[5] = sorter(method, "Quick")
     print(arr)
