@@ -16,7 +16,7 @@ def printarray(arr, n, type):
 
 
 def sorter(method):
-    for i in range(1, 4):
+    for i in range(1, 6):
         n = 10 ** i
         arr = arraygeneration(n)
         start_time = time.time()
