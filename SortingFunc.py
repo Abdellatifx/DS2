@@ -11,7 +11,7 @@ def arraygeneration(size):
 
 def printarray(arr, n, type):
     print("The", type, "sorted array with size ", n, "is ")
-    for i in range(0, 3):
+    for i in range(0, n):
         print("array[", i, "] = ", arr[i])
 
 
@@ -19,7 +19,7 @@ def sorter(method, type):
     N = 6
     ar = [0] * N
     j = 0
-    for i in range(1, 2):
+    for i in range(1, 4):
         n = 10 ** i
         arr = arraygeneration(n)
         start_time = time.time()
