@@ -1,5 +1,5 @@
 import time
-import Main
+
 
 
 def selection_sort(arr, n):

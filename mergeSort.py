@@ -1,6 +1,6 @@
 import math
 
-import Main
+
 import time
 import sys
 sys.setrecursionlimit(10**7)
