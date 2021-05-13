@@ -15,7 +15,7 @@ def heapify(arr, num, i):
         heapify(arr, num, largest)
 
 
-def heapSort(arr):
+def heapsort(arr):
     n = len(arr)
 
     for i in range(n // 2 - 1, -1, -1):
