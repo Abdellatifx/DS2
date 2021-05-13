@@ -1,7 +1,7 @@
-import time
+import ParentClass
 
 
-def insertion(array):
+def sort(array):
     for i in range(1, len(array)):
         key = array[i]
         hole = i
@@ -10,3 +10,9 @@ def insertion(array):
             hole = hole - 1
         array[hole] = key
     return array
+
+
+class insert(ParentClass.SortMethods):
+    pass
+
+

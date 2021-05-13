@@ -1,4 +1,7 @@
-def bubblesort(array):
+import ParentClass
+
+
+def sort(array):
     for i in range(len(array) - 1):
         flag = False
         for j in range(0, (len(array) - 1 - i)):
@@ -8,3 +11,7 @@ def bubblesort(array):
         if not flag:
             break
     return array
+
+
+class bubble(ParentClass.SortMethods):
+    pass
