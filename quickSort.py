@@ -28,7 +28,7 @@ def sort(array):
     start = 0
     end = len(array) - 1
     arr = quicksort(array, start, end)
-    return arr
+    return  arr
 
 
 class insert(ParentClass.SortMethods):

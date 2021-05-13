@@ -30,4 +30,5 @@ def Type():
 
     method = quickSort
     arr[5] = sorter(method, "Quick")
+
     print(arr)
