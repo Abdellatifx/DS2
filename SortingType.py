@@ -1,5 +1,5 @@
 import array
-
+import plotting
 import bubbleSort
 import heapSort
 import insertionSort
@@ -10,7 +10,7 @@ from SortingFunc import sorter
 
 
 def Type():
-    rows, cols = (6, 6)
+    rows, cols = (6, 5)
     arr = [[0] * cols] * rows
 
     method = insertionSort
@@ -31,3 +31,4 @@ def Type():
     #method = quickSort
    # arr[5] = sorter(method, "Quick")
     print(arr)
+    plotting.plotting(arr)
