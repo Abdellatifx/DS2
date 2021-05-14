@@ -8,16 +8,12 @@ sys.setrecursionlimit(100000000)
 def partition(array, start, end):
     pivot = start
     index = start + 1
-    while True:
-        while index <= end and array[end] >= pivot:
-            end = end-1
-        while index <= end and array[index] <= pivot:
-            index = index+1
-        if index <= end:
-            array[index], array[end] = array[end], array[index]
-        else:
-            break
-        array[index], array[start] = array[start], array[index]
+    while index <= end:
+        if array[index] < array[start]:
+            array[index], array[pivot] = array[pivot], array[index]
+            pivot += 1
+        index += 1
+    array[pivot], array[start] = array[start], array[pivot]
     return pivot
 
 
