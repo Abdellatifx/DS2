@@ -19,7 +19,7 @@ def sorter(method, type):
     N = 6
     ar = [0] * N
     j = 0
-    for i in range(1, 4):
+    for i in range(1, 5):
         n = 10 ** i
         arr = arraygeneration(n)
         start_time = time.time()
@@ -27,5 +27,5 @@ def sorter(method, type):
         end_time = time.time()
         ar[i-1] = (end_time - start_time)
         printarray(arr, n, type)
-        print("Sorting time  for size", n, "is ", end_time - start_time)
+        #print("Sorting time  for size", n, "is ", end_time - start_time)
     return ar
