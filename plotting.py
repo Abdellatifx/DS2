@@ -2,9 +2,8 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 
-def plotting(a, b, c, d, e, f):
-    a, b, c, d, e, f = []
-    for i in range(1, 6):
+def plotting(a, b, c, d, e, f, x):
+    for i in range(1, 4):
         x = 10 ** i
     plt.plot(x, a, color='r', label='insertion')
     plt.plot(x, b, color='b', label='bubble')
