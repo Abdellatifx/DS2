@@ -2,7 +2,7 @@ import sys
 
 import ParentClass
 
-sys.setrecursionlimit(100000000)
+sys.setrecursionlimit(10**7)
 
 
 def partition(array, start, end):
