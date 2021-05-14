@@ -1,5 +1,6 @@
 import random
 import time
+import plotting
 
 
 def arraygeneration(size):
@@ -19,13 +20,15 @@ def sorter(method, type):
     N = 6
     ar = [0] * N
     j = 0
+    n = []
     for i in range(1, 4):
-        n = 10 ** i
-        arr = arraygeneration(n)
+        n.append(10 ** i)
+        arr = arraygeneration(n[i-1])
         start_time = time.time()
         arr = method.sort(arr)
         end_time = time.time()
         ar[i-1] = (end_time - start_time)
-        printarray(arr, n, type)
-        print("Sorting time  for size", n, "is ", end_time - start_time)
+
+        print("Sorting time  for size", n[i-1], "is ", end_time - start_time)
+
     return ar
