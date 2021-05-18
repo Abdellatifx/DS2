@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 
 
 def plotting(array):
-    size = [10, 100, 1000, 10000, 10001]
+    size = [1000, 2000, 3000, 4000, 5000, 6000, 7000, 8000, 9000, 10000]
     plt.plot(size, array[0], color='r', label='insertion')
     plt.plot(size, array[1], color='b', label='bubble')
     plt.plot(size, array[2], color='g', label='selection')

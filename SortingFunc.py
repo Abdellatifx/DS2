@@ -12,18 +12,18 @@ def arraygeneration(size):
 
 def printarray(arr, n, type):
     print("The", type, "sorted array with size ", n, "is ")
-    for i in range(0, n):
-        print("array[", i, "] = ", arr[i])
+    print(arr,"\n\n")
 
 
-def sorter(method, type, array):
-    N = 5
+def sorter(method, type, array1):
+    N = 10
     ar = [0] * N
-    for i in range(1, 6):
+    for i in range(0, 10):
+        temp = array1[i].copy()
+        printarray(temp, len(temp), type)
         start_time = time.time()
-        array[i] = method.sort(array[i])
+        temp = method.sort(temp)
         end_time = time.time()
-        ar[i-1] = (end_time - start_time)
-        printarray(array[i], len(array[i]), type)
-        print(type, "Sorting time  for size", len(array[i]), "is ", end_time - start_time)
+        ar[i] = (end_time - start_time)
+        print(type, "Sorting time  for size", len(temp), "is ", end_time - start_time,"\n\n")
     return ar

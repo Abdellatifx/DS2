@@ -7,14 +7,15 @@ import mergeSort
 import quickSort
 import selectionSort
 import SortingFunc
+import sys
 
-
+sys.setrecursionlimit(10**7)
 def Type():
     rows, cols = (6, 5)
     arr = [[0] * cols] * rows
-    array = [[0] * cols] * rows
-    for i in range(1, 6):
-        array[i] = SortingFunc.arraygeneration(i*(10**(3)))
+    array = [[0] * cols] * 10
+    for i in range(1, 11):
+        array[i-1] = SortingFunc.arraygeneration(i*(10**(3)))
 
     method = insertionSort
     arr[0] = SortingFunc.sorter(method, "Insertion", array)
