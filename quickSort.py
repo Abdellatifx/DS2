@@ -10,8 +10,8 @@ def partition(array, start, end):
     index = start + 1
     while index <= end:
         if array[index] < array[start]:
-            array[index], array[pivot] = array[pivot], array[index]
             pivot += 1
+            array[index], array[pivot] = array[pivot], array[index]
         index += 1
     array[pivot], array[start] = array[start], array[pivot]
     return pivot
@@ -29,7 +29,7 @@ def sort(array):
     start = 0
     end = len(array) - 1
     arr = quicksort(array, start, end)
-    return  arr
+    return arr
 
 
 class insert(ParentClass.SortMethods):

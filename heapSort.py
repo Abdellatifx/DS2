@@ -3,8 +3,8 @@ import ParentClass
 
 def heapify(arr, num, i):
     largest = i
-    right = 2 * i + 1
-    left = 2 * i + 2
+    right = 2 * i + 2
+    left = 2 * i + 1
 
     if left < num and arr[largest] < arr[left]:
         largest = left
@@ -29,6 +29,3 @@ def sort(arr):
         heapify(arr, i, 0)
     return arr
 
-
-class insert(ParentClass.SortMethods):
-    pass
