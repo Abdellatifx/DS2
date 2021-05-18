@@ -12,8 +12,8 @@ def arraygeneration(size):
 
 def printarray(arr, n, type):
     print("The", type, "sorted array with size ", n, "is ")
-    #for i in range(0, n):
-      #  print("array[", i, "] = ", arr[i])
+    for i in range(0, n):
+        print("array[", i, "] = ", arr[i])
 
 
 def sorter(method, type):

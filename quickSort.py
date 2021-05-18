@@ -5,15 +5,16 @@ import ParentClass
 sys.setrecursionlimit(100000000)
 
 
-def partition(arr, start, end):
-    i = (start - 1)
-    pivot = arr[end]
-    for j in range(start, end):
-        if arr[j] <= pivot:
-            i = i + 1
-            arr[i], arr[j] = arr[j], arr[i]
-    arr[i + 1], arr[end] = arr[end], arr[i + 1]
-    return i + 1
+def partition(array, start, end):
+    pivot = start
+    index = start + 1
+    while index <= end:
+        if array[index] < array[start]:
+            pivot += 1
+            array[index], array[pivot] = array[pivot], array[index]
+        index += 1
+    array[pivot], array[start] = array[start], array[pivot]
+    return pivot
 
 
 def quicksort(array, start, end):
