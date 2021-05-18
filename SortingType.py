@@ -13,8 +13,8 @@ def Type():
     rows, cols = (6, 5)
     arr = [[0] * cols] * rows
     array = [[0] * cols] * rows
-    for i in range(0, 4):
-        array[i] = SortingFunc.arraygeneration(10**(i+1))
+    for i in range(1, 6):
+        array[i] = SortingFunc.arraygeneration(i*(10**(3)))
 
     method = insertionSort
     arr[0] = SortingFunc.sorter(method, "Insertion", array)
@@ -31,7 +31,7 @@ def Type():
     method = heapSort
     arr[4] = SortingFunc.sorter(method, 'Heap', array)
 
-   # method = quickSort
-   # arr[5] = SortingFunc.sorter(method, "Quick", array)
+    #method = quickSort
+    #arr[5] = SortingFunc.sorter(method, "Quick", array)
     print(arr)
 #    plotting.plotting(arr)
