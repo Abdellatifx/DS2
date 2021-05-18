@@ -31,7 +31,7 @@ def Type():
     method = heapSort
     arr[4] = SortingFunc.sorter(method, 'Heap', array)
 
-    #method = quickSort
-    #arr[5] = SortingFunc.sorter(method, "Quick", array)
+    method = quickSort
+    arr[5] = SortingFunc.sorter(method, "Quick", array)
     print(arr)
-#    plotting.plotting(arr)
+    plotting.plotting(arr)
